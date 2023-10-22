@@ -6,7 +6,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 li {
   list-style: none;
@@ -87,7 +86,8 @@ main {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 90vh;
+  min-height: 90vh;
+  height: fit-content;
   width: 100%;
   background: rgb(255,227,182);
   background: -moz-linear-gradient(0deg, rgba(255,227,182,1) 7%, rgba(244,244,244,1) 73%);
@@ -301,7 +301,7 @@ main {
   text-align: center;
   align-self: center;
   transform: rotate(-90deg);
-  width: 15vw;
+  width: fit-content;
   
 }
 .SectionAboutTitle {
@@ -314,7 +314,7 @@ main {
   text-align: center;
   align-self: center;
   transform: rotate(-90deg);
-  width: 5vw;
+  width: fit-content;
   
 }
 
