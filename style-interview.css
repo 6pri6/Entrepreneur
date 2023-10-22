@@ -1,0 +1,341 @@
+:root {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a,
+a:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+mark {
+  background-color: transparent;
+  color: inherit; 
+}
+header nav div ul li a {
+  color: rgb(0, 0, 0);  
+}
+a:hover {
+  color: rgb(125, 125, 125);
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(244, 244, 244);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  height: 10vh;
+  z-index: 20;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  width: 55%;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-right: 24px;
+}
+nav ul li {
+  font-family: 'Raleway', sans-serif;
+}
+header nav .logo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgb(41, 0, 79);
+  letter-spacing: 2px;
+}
+nav .burger-menu {
+  display: none;
+  width: 30px;
+  padding-right: 16px;
+  z-index: 11;
+  position: absolute;
+  right: 5%;
+}
+/* au dessus c'est pour la navbar, en dessous c'est pour le main */
+
+main {
+  display: block;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 10vh;
+  height: fit-content; 
+}
+/* au dessus c'est le main, en dessous c'est le footer */
+
+/* Cherhcher des fonts pour les différents textes des interviews */
+.FirstView {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  padding-bottom: 10vh;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: rgb(171,207,212);
+  background: -moz-linear-gradient(0deg, rgba(171,207,212,1) 7%, rgba(244,244,244,1) 73%);
+  background: -webkit-linear-gradient(0deg, rgba(171,207,212,1) 7%, rgba(244,244,244,1) 73%);
+  background: linear-gradient(0deg, rgba(171,207,212,1) 7%, rgba(244,244,244,1) 73%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#abcfd4",endColorstr="#f4f4f4",GradientType=1);
+}
+.TitleInterview {
+  text-align: center;
+  font-family: 'Cinzel', sans-serif;
+}
+.CitationInterview {
+  margin: 16px auto;
+  padding: 16px;
+  letter-spacing: 0.1px;
+  height: fit-content;
+  width: fit-content;
+  border-radius: 6px;
+  background-color: rgb(113, 194, 240);
+  box-shadow: rgb(0, 87, 99) 6px 4px 0px;
+  font-family: 'Spectral', serif;
+}
+
+.SecondView {
+  width: 100%;
+  height: 100vh;
+  background-color: bisque;
+  background: rgb(171,207,212);
+  background: -moz-linear-gradient(180deg, rgba(171,207,212,1) 7%, rgba(244,244,244,1) 73%);
+  background: -webkit-linear-gradient(180deg, rgba(171,207,212,1) 7%, rgba(244,244,244,1) 73%);
+  background: linear-gradient(180deg, rgba(171,207,212,1) 7%, rgba(244,244,244,1) 73%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#abcfd4",endColorstr="#f4f4f4",GradientType=1);
+  display: flex;
+  padding-bottom: 5vh;
+
+}
+.IdentityCard {
+  position: relative;
+  border-radius: 8px;
+  top: 5%;
+  margin: auto;
+  display: flex;
+  width: 62vw;
+  height: fit-content;
+  background: rgb(0,87,99);
+  background: -moz-linear-gradient(155deg, rgba(0,87,99,1) 0%, rgba(255,255,255,1) 100%);
+  background: -webkit-linear-gradient(155deg, rgba(0,87,99,1) 0%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(155deg, rgba(0,87,99,1) 0%, rgba(255,255,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#005763",endColorstr="#ffffff",GradientType=1);
+  flex-wrap: wrap;
+  box-shadow: rgb(0, 87, 99) 6px 4px 0px;
+  text-shadow: black 1px 1px 85px;
+
+}
+.IdentityPhoto {
+  height: 21vh;
+  border: solid rgba(0, 0, 0, 0.4) 2px;
+  border-radius: 5px;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 20px;
+  opacity: 0.9;
+  background-color: rgba(245, 245, 220, 0.2);
+  
+}
+.BasicData {
+  margin: 20px 0;
+  padding: 16px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25vw;
+  height: 21vh;
+  background-color: rgba(245, 245, 220, 0.2);
+}
+.Location {
+  margin: 20px;
+  padding: 16px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 20vw;
+  height: 21vh;
+  background-color: rgba(245, 245, 220, 0.2);
+
+}
+.Location li {
+  padding: 16px 0;
+}
+.BasicData li, .Location li {
+  display: flex;
+  justify-content: space-between;
+}
+.BD1 {
+width: 50%;
+font-weight: bold;
+text-decoration: underline;
+}
+.BD2 {
+  width: 40%;
+  color: rgb(41, 0, 79);
+}
+
+
+.Activity {
+  width: 58.9vw;
+  height: fit-content;
+  min-height: 40vh;
+  margin: auto;
+  padding: 16px 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: rgba(245, 245, 220, 0.2);
+}
+.Activity h4 {
+  text-decoration: underline;
+}
+.Activity1 {
+  width: 14.725vw;
+  line-height: 32px;
+  height: 36vh;
+}
+.Activity2 {
+  width: 14.725vw;
+  line-height: 32px;
+}
+.Activity3 {
+  width: 14.725vw;
+  line-height: 32px;
+}
+.Activity div h4,p {
+  font-size: 18px;
+  font-family: 'Spectral', serif;
+}
+
+.ThirdView {
+  background: rgb(171,207,212);
+  background: -moz-linear-gradient(0deg, rgba(171,207,212,1) 0%, rgba(244,244,244,1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(171,207,212,1) 0%, rgba(244,244,244,1) 100%);
+  background: linear-gradient(0deg, rgba(171,207,212,1) 0%, rgba(244,244,244,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#abcfd4",endColorstr="#f4f4f4",GradientType=1);
+  padding-top: 10vh;
+  height: fit-content;
+  min-height: 90vh;
+  width: 100%;
+}
+.FAQTitle {
+  padding-bottom: 10vh;
+  text-align: center;
+}
+.Question {
+  width: 100%;
+  margin-left: 16px;
+  padding: 16px;
+}
+.Answer {
+  width: 100%;
+  margin-left: 16px;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-bottom: solid rgba(110, 110, 110, 0.103) 1px;
+}
+/* au dessus c'est le footer, en dessous c'est les media queries */
+@media (max-width: 1450px) {
+  .SecondView {
+    height: fit-content;
+  }
+  .IdentityCard {
+    flex-direction: row;
+    height: fit-content;
+  }
+  .IdentityPhoto {
+    width: 150px;
+    height: 150px;
+  }
+  .BasicData {
+    margin: 15px;
+    padding: 10px 24px;
+    width: fit-content;
+    height: fit-content;
+  }
+  .Location {
+    margin: 15px;
+    padding: 10px 24px;
+    width: fit-content;
+    height: fit-content;
+  }
+  .BD1 {
+    width: 30%;
+    }
+    .BD2 {
+      width: 38%;
+    }
+    
+}
+
+@media (max-width: 650px) {
+.nav-links {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(12px);
+  padding: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  margin-left: -100%;
+  transition: 0.2s ease-out;
+  display: flex;
+}
+header nav ul {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.mobile-menu {
+  margin-left: 0;
+}
+nav ul li {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 30px 0;
+}
+header nav .logo {
+  letter-spacing: 0.5px;
+}
+nav .burger-menu {
+  display: block;
+}
+.Activity {
+  flex-direction: column;
+}
+.Activity1, .Activity2, .Activity3 {
+  line-height: 24px;
+  width: 100%;
+  height: fit-content;
+  padding: 16px 0;
+}
+}
+@media (max-width: 400px) {
+  .BasicData li, .Location li {
+    display: flex;
+    flex-direction: column;
+  }
+  .IdentityPhoto {
+    width: 110px;
+    height: 110px;
+  }
+}
+

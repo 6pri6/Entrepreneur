@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrepreneur.</title>
+    <link href="style.css" rel="stylesheet" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;700&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav id="nav">
+            <a href="index.html" class="logo">Entrepreneur.</a>
+            <div class="nav-links">
+                <ul>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="a-propos.html">A propos</a>
+                    </li>
+                    <li>
+                        <a href="#">Podcast</a>
+                    </li>
+                </ul>
+            </div>
+            <img src="burger-menu.svg" alt="burger menu" class="burger-menu">
+          </nav>
+    </header>
+    <main>
+        <div class="first-view">
+            <div class="recent" id="Recent"><h2>Récent</h2></div>
+            <div class="container">
+                <a href="interview001.html">
+                    <div class="PreviewDiv">
+                        <section class="PreviewSection PreviewPhoto">
+                        </section>
+                        <section class="PreviewSection">
+                            <h2>#001 - Matthieu Stefani</h2>
+                            <p>Notamment connu pour CosaVostra et GDIY, cette Entrepreneur français saura vous captiver par son franc parlé,
+                            et ses années d'expériences </p>
+                        </section>
+                    </div>
+                </a>
+                <div class="PreviewDiv PreviewDiv2 ComingSoon">
+                </div>
+                <div class="PreviewDiv PreviewDiv3 ComingSoon">
+                </div>
+                <div class="PreviewDiv PreviewDiv4 ComingSoon">
+                </div>
+                <div class="PreviewDiv PreviewDiv5 ComingSoon">
+                </div>
+                <div class="PreviewDiv PreviewDiv6 ComingSoon">
+                </div>
+            </div>
+            <div class="summary">
+                <h2 class="SummaryTitle">Sommaire</h2>
+                <a id="RecentLink" href="#Recent" class="RecentLink ContainerNavLinks">Récent</a>
+                <a id="AboutLinks" href="#About" class="AboutLinks ContainerNavLinks">A propos</a>
+                <a href="#QA" class="AllQA ContainerNavLinks">Toutes les Questions/Réponses</a>
+                <a href="#Podcast" class="AllPodcasts ContainerNavLinks">Tous les Podcasts</a>
+                <a href="#About" class="Newsletter ContainerNavLinks">NewsLetter</a>
+
+            </div>
+        </div>
+        <div class="second-view">
+            <div class="SectionAboutTitle" id="About"><h2>About</h2></div>
+            <section class="SectionAbout1">
+                <div class="AboutContent">
+                    <h2><mark>Entrepreneur.</mark> une histoire de passion</h2>
+                    <br>
+                    <section class="AboutSection">
+                        <p>Si une interview est disponible en Podcast,
+                            vous retrouverez le lien sur la page de l'interview en question
+                            et en plus de ça sur la page contenant tout les <a>Podcasts</a> 
+                        </p>
+                    </section>
+                </div>
+            </section>
+            <section>
+                <a href="https://forms.gle/LzNmPVkXxiwEGMkV9" target="_blank">
+                    <button class="NewsletterBtn" type="button">S'INSCRIRE A LA NEWSLETTER<br>C'est gratuit !</button>
+                </a> 
+            </section>
+            
+        </div>
+        <div class="third-view" id="QA">
+            <div class="SectionTitle">
+                <h2>Toutes les QA</h2>
+            </div>
+            <div class="Slider">
+                <div class="page PageActive">
+                    <a href="interview001.html"><h2>#001 - Matthieu Stefani</h2></a>
+                </div>
+                <div class="page">
+                    <a href="#"><h2>Empty</h2></a>
+                </div>
+                <div class="page">
+                    <a href="#"><h2>Empty</h2></a>
+                </div>    
+                <div class="prev">
+                    <i class="fa-solid fa-circle-chevron-left"></i>
+                </div>
+                <div class="next">
+                    <i class="fa-solid fa-circle-chevron-right"></i>
+                </div>
+            </div>  
+        </div>
+        <div class="fourth-view" id="Podcast">
+            <div class="SectionTitle">
+                <h2>Tous les Podcasts</h2>
+            </div>
+            <div class="Slider">
+                <div class="page1 PageActive">
+                    <a href="#"><h2>#001 - Matthieu Stefani - Not yet avaible</h2></a>
+                </div>
+                <div class="page1">
+                    <a href="#"><h2>Empty</h2></a>
+                </div>
+                <div class="page1">
+                    <a href="#"><h2>Empty</h2></a>
+                </div>    
+                <div class="prev1" id="test">
+                    <i class="fa-solid fa-circle-chevron-left"></i>
+                </div>
+                <div class="next1">
+                    <i class="fa-solid fa-circle-chevron-right"></i>
+                </div>
+            </div>   
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
